@@ -94,10 +94,7 @@ function addTime(){
     if(datemain.textContent !== `${langArr['week'][document.querySelector('.change-lang').value][date.getDay()]}, ${langArr['month'][[document.querySelector('.change-lang').value]][date.getMonth()]} ${date.getDate()}`){
         datemain.textContent = `${langArr['week'][document.querySelector('.change-lang').value][date.getDay()]}, ${langArr['month'][[document.querySelector('.change-lang').value]][date.getMonth()]} ${date.getDate()}`
     }
-    // greeting.textContent = langArr['greeting'][document.querySelector('.change-lang').value]
-    // date.getHours() >= 6 &&  date.getHours() < 12 ? greeting.textContent = `Good morning`:
-    // date.getHours() >= 12 && date.getHours() < 18 ? greeting.textContent = `Good afternoon`:
-    // date.getHours() >= 18 ? greeting.textContent = `Good evening `: greeting.textContent = `Good night`
+    
     date.getHours() >= 6 &&  date.getHours() < 12 ? greeting.textContent = greeting.textContent = langArr['greeting'][document.querySelector('.change-lang').value+'-1']:
     date.getHours() >= 12 && date.getHours() < 18 ? greeting.textContent = langArr['greeting'][document.querySelector('.change-lang').value+'-2']:
     date.getHours() >= 18 ? greeting.textContent = greeting.textContent = langArr['greeting'][document.querySelector('.change-lang').value+'-3']: greeting.textContent = greeting.textContent = langArr['greeting'][document.querySelector('.change-lang').value+'-4']
@@ -164,7 +161,6 @@ let icon     //переменная для убирания иконки пог�
 
   btnChangeQuote.addEventListener('click',getchangeQuote)
   function getchangeQuote(){
-      // let result = Math.floor(Math.random() * (1643 - 1)) + 1
       let url = langArr['url'][document.querySelector('.change-lang').value]
     const res = fetch(url)
       .then(response => response.json())
@@ -256,14 +252,12 @@ let onOffMedia = document.querySelector('.on-off-media')
 let onOffCitats = document.querySelector('.on-off-citats')
 let onOffTime = document.querySelector('.on-off-time')
 let btnOff = document.querySelector('.btn-off')
-// let changeLang = document.querySelector('.change-lang')
 
 let onoffwetherText = document.querySelector('.on-off-wetherText')
 let onoffwetherMedia = document.querySelector('.on-off-wetherMedia')
 let onoffwetherCitats = document.querySelector('.on-off-wetherCitats')
 let onoffwetherTime = document.querySelector('.on-off-wetherTime')
 let color = document.querySelector('.color')
-// let weather = document.querySelector('.weather')
 
 function chengeSetings(){
   onoffwetherText.textContent = langArr['onOffWether'][document.querySelector('.change-lang').value]

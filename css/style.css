@@ -16,9 +16,7 @@ body {
   font-size: 16px;
   color: #fff;
   text-align: center;
-  /* background: url("../assets/img/bg.jpg") center/cover, rgba(0, 0, 0, 0.5); */
   background: center/cover/no-repeat, rgba(0, 0, 0, 0.5);
-  /* background-repeat: no-repeat; */
   background-blend-mode: multiply;
   transition: background-image 1s ease-in-out;
 }
@@ -272,10 +270,8 @@ body {
   margin-top: 320px;
   width: 50px;
   height: 50px;
-  /* outline: 1px solid red; */
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6sy3kEC4XxvuCmKbuAFg-dRHeJnRjsZfgWNixSFELqjITAVbhSO1KTd1JU1QrrTOpfFA&usqp=CAU');
   background-size: 100%;
-  /* background-position-y: -1px; */
   background-repeat: no-repeat;
   border-radius: 50%;
 }
@@ -283,13 +279,12 @@ body {
   position: absolute;
   width: 0px;
   height: 0;
-  /* outline: 1px solid red; */
   background: rgba(10, 10, 10, 0.7);
   transition: all 0.8s;
 }
 .settings-active{
-  height: 110%;
-  width: 300px;
+  height: 130%;
+  width: 400px;
   transition: all 0.8s;
 }
 .btn-off{
@@ -345,7 +340,6 @@ background-color: green;
 .on-off-wether:hover{
 cursor: pointer;
 outline: 1px solid white;
-/* transition: all 0.4s; */
 }
 .on-off-media:hover{
   cursor: pointer;
