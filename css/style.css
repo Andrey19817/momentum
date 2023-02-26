@@ -283,7 +283,7 @@ body {
   transition: all 0.8s;
 }
 .settings-active{
-  height: 130%;
+  height: 430px;
   width: 400px;
   transition: all 0.8s;
 }
